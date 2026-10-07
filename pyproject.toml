@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arxiv_fetch"
+version = "0.1.0"
+description = "Download an arXiv paper's PDF, source files, and abstract into a local directory"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+arxiv_fetch = "arxiv_fetch:main"
+
+[tool.setuptools]
+py-modules = ["arxiv_fetch"]
